@@ -35,7 +35,3 @@ Sistema para gestionar inventarios de productos electrónicos, alimenticios y se
 - **Framework:** .NET 6.0 / 8.0 SDK.
 - **IDE:** Visual Studio 2022 / VS Code.
 
-## 🚀 Cómo utilizar este repositorio
-1. Clona el repositorio:
-   ```bash
-   git clone [https://github.com/TU_USUARIO/NOMBRE_DEL_REPO.git](https://github.com/TU_USUARIO/NOMBRE_DEL_REPO.git)
