@@ -1,0 +1,69 @@
+============================================================
+PROYECTO: SISTEMA DE GESTIÓN DE SERVICIOS Y PRODUCTOS (ERP)
+OBJETIVO: Práctica intensiva de POO en C#
+============================================================
+
+ARCHIVO 1: IVendible.cs (Concepto: INTERFACES)
+------------------------------------------------------------
+- Definir la interfaz 'IVendible'.
+- Propiedad: decimal PrecioBase { get; }
+- Método: decimal CalcularPrecioFinal();
+- Propósito: Establecer un contrato para cualquier objeto que 
+  pueda ser facturado en el sistema.
+
+ARCHIVO 2: Producto.cs (Concepto: ABSTRACCIÓN Y ENCAPSULAMIENTO)
+------------------------------------------------------------
+- Definir clase abstracta 'Producto' que implemente 'IVendible'.
+- Campos privados (encapsulamiento): _nombre, _codigoIdentificador.
+- Propiedades públicas: Nombre, Codigo (con validación básica).
+- Constructor: Que inicialice los campos base.
+- Método Abstracto: void ImprimirDetalles();
+
+ARCHIVO 3: ProductoElectronico.cs (Concepto: HERENCIA Y POLIMORFISMO)
+------------------------------------------------------------
+- Heredar de 'Producto'.
+- Atributo específico: int GarantiaMeses.
+- Implementar 'CalcularPrecioFinal': Sumar un 15% de impuesto 
+  tecnológico al precio base.
+- Sobrescribir 'ImprimirDetalles' para incluir la garantía.
+
+ARCHIVO 4: ProductoAlimenticio.cs (Concepto: REPETICIÓN DE HERENCIA)
+------------------------------------------------------------
+- Heredar de 'Producto'.
+- Atributo específico: DateTime FechaVencimiento.
+- Implementar 'CalcularPrecioFinal': Si faltan menos de 7 días 
+  para vencer, aplicar 50% de descuento (Lógica de negocio).
+- Sobrescribir 'ImprimirDetalles'.
+
+ARCHIVO 5: ServicioMantenimiento.cs (Concepto: POLIMORFISMO DE INTERFAZ)
+------------------------------------------------------------
+- Heredar de 'Producto'.
+- Atributo específico: string TecnicoAsignado.
+- Implementar 'CalcularPrecioFinal': Precio base + tarifa fija 
+  de visita técnica.
+- Nota: Aquí practicas cómo un "Servicio" se comporta como un 
+  "Producto" gracias a la abstracción.
+
+ARCHIVO 6: GestorInventario.cs (Concepto: OBJETOS Y COLECCIONES)
+------------------------------------------------------------
+- Clase encargada de la lógica de almacenamiento.
+- Atributo: List<Producto> _listaProductos.
+- Método: Agregar(Producto p).
+- Método: MostrarInformeGeneral(): Debe recorrer la lista y 
+  llamar a 'CalcularPrecioFinal()' y 'ImprimirDetalles()' de 
+  cada objeto (aquí verás el polimorfismo en acción).
+
+ARCHIVO 7: Program.cs (PUNTO DE ENTRADA)
+------------------------------------------------------------
+- Instanciar el 'GestorInventario'.
+- Crear al menos 2 objetos de cada clase hija (6 objetos total).
+- Llamar al método 'MostrarInformeGeneral'.
+- Reto: Intentar instanciar la clase 'Producto' (debe fallar 
+  por ser abstracta).
+
+============================================================
+SUGERENCIA DE REPOSITORIO GITHUB:
+- Estructura: /src (archivos .cs)
+- README.md (explicando qué concepto de POO aplicaste en cada archivo)
+- .gitignore (para excluir carpetas /bin y /obj)
+============================================================
