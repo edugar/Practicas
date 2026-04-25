@@ -3,7 +3,7 @@ Prácticas de programación
 
 # Master en Programación Orientada a Objetos (C# / .NET)
 
-Este repositorio es un diario de aprendizaje y entrenamiento dedicado a dominar los pilares de la **Programación Orientada a Objetos (POO)**. Aquí se encuentran diversos proyectos de consola desarrollados en C#, enfocados en resolver problemas de lógica de negocio del mundo real.
+Este repositorio es un diario de aprendizaje y entrenamiento dedicado a entrenar y practicar diferentes aspectos de la progeamación ademas del código, enfocados en resolver problemas de lógica de negocio del mundo real.
 
 ## 🎯 Objetivos de Aprendizaje
 El propósito de estas prácticas es alcanzar fluidez técnica en:
