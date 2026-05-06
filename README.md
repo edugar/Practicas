@@ -1,37 +1,44 @@
-# Practicas
-Prácticas de programación
+# Prácticas
 
-# Master en Programación Orientada a Objetos (C# / .NET)
+Este repositorio es una lista de ejercicios y entrenamiento en temas como lógica de programación en proyectos reales a los que un programador se enfrenta en su día a día además de la codificación, el uso de métodos y sintaxis.
+Las prácticas se pueden aplicar en cualquie lenguaje de programación ya que serán instrucciones de lo que se tiene que hacer, pero si he de poner algun ejemplo será en lenguaje C#
 
-Este repositorio es un diario de aprendizaje y entrenamiento dedicado a entrenar y practicar diferentes aspectos de la progeamación ademas del código, enfocados en resolver problemas de lógica de negocio del mundo real.
-
-## 🎯 Objetivos de Aprendizaje
-El propósito de estas prácticas es alcanzar fluidez técnica en:
-- **Abstracción:** Modelado de entidades del mundo real.
-- **Encapsulamiento:** Protección de datos y uso de modificadores de acceso.
-- **Herencia:** Reutilización de código y jerarquías de clases.
-- **Polimorfismo:** Implementación de comportamientos específicos mediante `override`.
-- **Interfaces:** Definición de contratos y desacoplamiento de código.
+### 🎯 Objetivos de Aprendizaje
+- **Código**
+- **Buenas prácticas**
+- **Lógica de programación**
+- **SOLID**
 
 ---
 
-## 📂 Estructura de las Prácticas
+## Prácticas de Código
 
-Cada carpeta dentro de este repositorio representa una unidad de práctica independiente:
+Ejercicios para practicar código ya definido ej. funciones para manejar archivos (creacion, lectura, escritura, etc.), envío de correos electrónicos, consumo de APIs...
+- **Sintaxis**
+- **Métodos**
+- **Librerias**
+- **NuGets**
+  
+---
 
-### 1. Sistema de Gestión de Almacén (ERP-Core)
-**Estado:** `En Progreso` 🛠️
-Sistema para gestionar inventarios de productos electrónicos, alimenticios y servicios.
-- **Conceptos clave:** Herencia de múltiples niveles e interfaces de facturación.
-- **Archivos principales:** `IVendible.cs`, `Producto.cs`, `GestorInventario.cs`.
+## Buenas Prácticas
+Ejercicios para aprender y acostumbrarse al uso de las buenas prácticas y convenciones de la programación y el contraste en casos de proyectos reales de software.
 
-### 2. [Próxima Práctica]
-*Espacio reservado para futuros planes de desarrollo.*
+Cosas como la forma de nombrar las variables, la escritura de dichos nombres
 
 ---
 
-## 🛠️ Requisitos Técnicos
-- **Lenguaje:** C# 10.0 o superior.
-- **Framework:** .NET 6.0 / 8.0 SDK.
-- **IDE:** Visual Studio 2022 / VS Code.
+## Lógica de programación
+Ejercicios de desarrollo de software para  la creacion de métodos aplicando análisis del objetivo que se intenta cumplir.
 
+- **Analisis:** para determinar el flujo de operación, métodos y algoritmos que se van a utilizar.
+- **Alternativas:** buscar diferentes formas de llegar al mismo resultado.
+- **Optimizacion:** después buscar alternativas a la función analizar cuál puede ser la más optima teniendo en cuenta los recursos disponibles.
+
+---
+
+## Principios SOLID
+
+La comprencion de los principios SOLID y su aplicación en proyectos de software.
+
+---
